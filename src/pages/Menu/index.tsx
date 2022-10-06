@@ -3,6 +3,7 @@ import {ReactComponent as Logo} from 'assets/logo.svg'
 import { Search } from './Search'
 import { useState } from 'react'
 import { Filters } from './Filter'
+import { Order } from './Order'
 
 export function Menu(){
     
@@ -23,6 +24,7 @@ export function Menu(){
                 <Search search={search} setSearch={setSearch}/>
                 <div className={style.menu__filter}>
                     <Filters filter={filter} setFilter={setFilter}/>
+                    <Order/>
                 </div>
             </section>
         </main>
